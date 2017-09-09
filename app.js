@@ -13,3 +13,7 @@ app.listen(3000, function(){
 app.get('/search', function(req, res){
   console.log(req.query.name)
 });
+
+app.get('/weather/:zipcode', function(req, res){
+  console.log("getting weather for " + req.params.zipcode);
+})
