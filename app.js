@@ -9,3 +9,7 @@ app.get('/', function(req, res){
 app.listen(3000, function(){
   console.log('example app on port 3000');
 });
+
+app.get('/search', function(req, res){
+  console.log(req.query.name)
+});
